@@ -1,25 +1,43 @@
 {
   "expo": {
-    "name": "Hackathon_2",
-    "slug": "Hackathon_2",
+    "name": "FeedFlow",
+    "slug": "feedflow",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0A0A0F",
+    "splash": {
+      "backgroundColor": "#0A0A0F"
+    },
+    "scheme": "feedflow",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.feedflow.app"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0A0A0F",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
+      "package": "com.feedflow.app",
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-haptics",
+      [
+        "expo-linear-gradient"
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
     }
   }
 }
