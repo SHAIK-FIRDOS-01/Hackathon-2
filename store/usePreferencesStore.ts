@@ -10,7 +10,12 @@ export type ContentCategory =
   | 'health'
   | 'sports'
   | 'entertainment'
-  | 'politics';
+  | 'politics'
+  | 'finance'
+  | 'fitness'
+  | 'travel'
+  | 'gaming'
+  | 'education';
 
 export type RefreshInterval = '15min' | '30min' | '1hour' | '6hour' | 'manual';
 
